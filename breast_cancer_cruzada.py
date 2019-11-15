@@ -10,7 +10,6 @@ classe = pd.read_csv('saidas-breast.csv')
 
 def criarRede():
     classificador = Sequential()
-#primeira camada oculta
     classificador.add(Dense(units = 16, 
                         activation = 'relu', kernel_initializer = 'random_uniform', 
                         input_dim = 30))
